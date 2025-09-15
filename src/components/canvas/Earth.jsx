@@ -1,9 +1,9 @@
-import React from 'react'
+import { React, Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const Earth = () => {
-  return (
-    <div>Earth</div>
-  )
-}
+  // return <div>Earth</div>;
+};
 
-export default Earth
+export default Earth;

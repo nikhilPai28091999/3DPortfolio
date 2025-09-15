@@ -37,18 +37,20 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h2 className={styles.sectionHeadText}>Introduction</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[19px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled developer with experience in Typescript and Javascript,
-        and expertise in frameworks like React, Node.js and Three.js. I'm a
-        quick learner and collaborate closely with clients to create efficient,
-        scalable, and user-friendly solutions that solve real-world problems.
-        Let's work together to bring your ideas to life!
+        A technology enthusiast with a keen interest in{" "}
+        <span className="text-[#915eff]">Full Stack Development </span>
+        and <span className="text-[#915eff]">Machine Learning </span>. I enjoy
+        exploring how technology can solve real-world problems, whether it’s
+        building dynamic web applications or experimenting with intelligent
+        data-driven solutions. I am comfortable working with the below
+        technologies/frameworks:
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

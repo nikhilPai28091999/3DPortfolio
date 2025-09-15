@@ -23,6 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  fastapi,
+  DewanLogo,
+  AdityaBirlaLogo,
+  MaybankLogo,
+  IrelandRentPredictor,
+  Amazon,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +48,35 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "FastAPI",
+    icon: fastapi,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "ReactJS",
+    icon: reactjs,
   },
   {
-    title: "Backend Developer",
+    title: "Django",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "SpringBoot",
+    icon: creator,
+  },
+  {
+    title: "HTML",
+    icon: creator,
+  },
+  {
+    title: "CSS",
+    icon: creator,
+  },
+  {
+    title: "SQL",
+    icon: creator,
+  },
+  {
+    title: "Docker",
     icon: creator,
   },
 ];
@@ -116,55 +138,39 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "Dewan Architects & Engineers",
+    icon: DewanLogo,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Sep 2023 - Jul 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Solely developed Dewan Software Manager (DSM), a company-wide solution for installing pre-approved software with admin privileges.",
+      "Built the web application version using React (Frontend) and FastAPI (Backend).",
+      "Later extended DSM to a desktop application using Windows Forms App (.NET Framework) for enhanced accessibility.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Associate Product Engineer",
+    company_name: "Aditya Birla Group",
+    icon: AdityaBirlaLogo,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Dec 2022 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked as a Full Stack Developer and Data Engineer.",
+      "Developed web applications using Django and FastAPI, ensuring scalable and maintainable solutions.",
+      "Built ETL pipelines in Python to extract and process data from Aspen servers, enabling real-time insights.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Product Engineer",
+    company_name: "MBB Labs Private Ltd (Maybank)",
+    icon: MaybankLogo,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2021 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked primarily as a Full Stack developer in PESTOS team on the Loan Disbursement Project.",
+      "Developed backend services using Spring MVC and Spring Boot, and built interactive frontends with React.",
+      "Coordinated with the ELDS system in Malaysia, ensuring seamless integration and smooth project delivery.",
     ],
   },
 ];
@@ -198,68 +204,76 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Ireland Rent Predictor",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed an Ireland Rent Predictor web app using React, FastAPI, and a Random Forest model on daft.ie data, featuring a Rasa chatbot for conversational queries and Dockerized for deployment.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "fastapi",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "html",
         color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "randomforest",
+        color: "orange-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: IrelandRentPredictor,
+    source_code_link: "https://github.com/nikhilPai28091999/Rent-Predictor",
   },
+  {
+    name: "Amazon UI Clone",
+    description:
+      "Built an Amazon-like UI with JavaScript, HTML, and CSS, featuring a dynamic shopping cart with add/remove functionality, while gaining hands-on experience in frontend development, DOM manipulation, and state management.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: Amazon,
+    source_code_link: "https://github.com/nikhilPai28091999/Amazon",
+  },
+  // {
+  //   name: "GDNA Project",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

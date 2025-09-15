@@ -9,14 +9,18 @@ import { github } from "../assets";
 
 const ProjectCard = ({ project, index }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      onClick={() => window.open(project.source_code_link, "_blank")}
+      className="cursor-pointer"
+    >
       <Tilt
         options={{
-          max: 45,
+          max: 30,
           scale: 1,
-          speed: 450,
+          speed: 200,
         }}
-        className="bg-tertiary p-5 rounded-2xl w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-[360px] w-full cursor-pointer"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -59,8 +63,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        {/* <p className={styles.sectionSubText}>My work</p> */}
+        <h2 className={styles.sectionHeadText}>My Personal Projects</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
